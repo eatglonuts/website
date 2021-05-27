@@ -1,0 +1,147 @@
+/* Import Fonts */
+@font-face {
+  font-family: 'GTSuper-Italic';
+  src: url('../fonts/GT-Super-Display-Trial-Regular-Italic.otf') format('truetype');
+}
+@font-face {
+  font-family: 'GTSuper-Regular';
+  src: url('../fonts/GT-Super-Display-Trial-Regular.otf') format('truetype');
+}
+@font-face {
+  font-family: 'GTWalsheim-Bold';
+  src: url('../fonts/GT-Walsheim-Pro-Trial-Bold.otf') format('truetype');
+}
+@font-face {
+  font-family: 'GTWalsheim-Medium';
+  src: url('../fonts/GT-Walsheim-Pro-Trial-Medium.otf') format('truetype');
+}
+@font-face {
+  font-family: 'GTSuper-Adieu';
+  src: url('../fonts/GTFAdieuTRIAL-Regular.otf') format('truetype');
+}
+
+/* ROOT FONT STYLES */
+* {
+  font-family: 'GTSuper-Regular', sans-serif;
+  line-height: 1.5;
+  font-weight: 200;
+}
+/* Global Variables */
+:root {
+  --black           : #4D4D4D;
+  --gray            : #333333;
+  --white           : #FBFBFB;
+  --purple          : #C800FF;
+  --purple-highlight: #DE66FF;
+}
+/* UNIVERSAL */
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+  overflow: auto;
+}
+/* Standard Elements */
+h1 {
+  font-family: 'GTSuper-Adieu', sans-serif;
+  font-size: 3rem;
+  font-weight: 200;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 200;
+}
+
+h3 {
+  font-family: 'GTWalsheim-Medium', sans-serif;
+  color: var(--purple);
+  /* font-size: 1.375rem; */
+  font-size: 29px;
+  font-weight: 100;
+  letter-spacing: 0.1em;
+}
+
+h4 {
+  font-family: 'GTWalsheim-Medium', sans-serif;
+  color: var(--purple);
+  /* font-size: 1.125rem; */
+  font-size: 19px;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.875rem;
+}
+a {
+  color: var(--purple);
+  font-weight: 200;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--purple-highlight);
+  text-decoration: none;
+}
+b {
+  font-weight: 300;
+}
+ol li {
+  font-weight: 300;
+  padding-left: 15px;
+  font-size: 1em;
+  line-height: 2em;
+}
+ol li a {
+  font-weight: 300;
+}
+p {
+  font-family: 'GTWalsheim-Medium', sans-serif;
+  color: var(--purple);
+  line-height: 1.8;
+}
+/* Section Styles */
+.section {
+  width: 100%;
+  height: auto;
+  min-height: 250px;
+  padding: 60px 0 60px 0;
+  overflow: hidden;
+}
+.section.full {
+  min-height: 100vh;
+}
+.section.relative {
+  position: relative;
+}
+/* Font Color White */
+.f-white {
+  color: rgba(255,255,255,1) !important;
+}
+.f-purple {
+  color: var(--purple);
+}
+/* Custom Layout Barriers */
+/* Special Items */
+.barrier {
+  padding-top: 15px;
+}
+.barrier.sm {
+  padding-top: 25px;
+}
+.barrier.md {
+  padding-top: 50px;
+}
+.barrier.lg {
+  padding-top: 75px;
+}
+.barrier.xl {
+  padding-top: 125px;
+}

@@ -1,0 +1,60 @@
+/* Navigation */
+.nav-link {
+  padding-top: 28px;
+}
+.nav-link a {
+  font-family: 'GTWalsheim-Bold', sans-serif;
+  font-size: 15px;
+  color: var(--purple);
+  letter-spacing: 0.75px;
+}
+.nav-link a:hover {
+  border-bottom: 1px solid;
+}
+
+/* Footer */
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  justify-content: space-between;
+}
+.ig-container {
+  display: inline-block;
+}
+.copyright {
+  display: inline-block;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 14px 46px;
+  font-size: 19px;
+  font-weight: bold;
+  background-color: var(--purple);
+  text-align: center;
+  color: var(--white);
+  border: 1px solid transparent;
+  letter-spacing: 2px;
+  border-radius: 0px;
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+  text-decoration: none !important;
+  transition: all ease-in-out 0.1s;
+  -moz-transition: all ease-in-out 0.1s ease-in-out; /* FF 4 */
+  -webkit-transition: all ease-in-out 0.1s ease-in-out; /* Safari & Chrome */
+  -o-transition: all ease-in-out 0.1s ease-in-out; /* Opera */
+}
+.btn:hover {
+  color: var(--purple);
+  border: 1px solid var(--purple);
+  background-color: transparent;
+}
+
+.btn:active {
+  color: var(--white);
+  border: 1px solid var(--purple-highlight);
+  background-color: var(--purple-highlight);
+}
