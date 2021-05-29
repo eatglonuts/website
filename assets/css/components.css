@@ -1,4 +1,25 @@
 /* Navigation */
+.nav-container {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.nav-link-container {
+  width: 247px;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.logo {
+  /* display: inline-block; */
+}
+.logo a {
+  font-family: 'GTSuper-Adieu', sans-serif;
+  font-size: 3rem;
+  font-weight: 200; color:var(--purple);
+}
 .nav-link {
   padding-top: 28px;
 }
@@ -6,10 +27,10 @@
   font-family: 'GTWalsheim-Bold', sans-serif;
   font-size: 15px;
   color: var(--purple);
-  letter-spacing: 0.75px;
+  letter-spacing: 0.03em;
 }
 .nav-link a:hover {
-  border-bottom: 1px solid;
+  border-bottom: 2px solid;
 }
 
 /* Footer */
