@@ -28,4 +28,12 @@
     padding-top: 30px !important;
   }
 
+  /* FLAVORS PAGE */
+  .desktop-feature-blocks {
+    display: none;
+  }
+  .mobile-feature-blocks {
+    display: block;
+  }
+
 }
