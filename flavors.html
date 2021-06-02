@@ -51,11 +51,92 @@
         </div>
       </div>
 
+      <style media="screen">
+        hr {
+          border: 1px solid var(--purple);
+        }
+        .flavors-copy {
+          padding-top: 60px;
+          padding-bottom: 25px;
+        }
+        .product-name {
+          font-family: 'GTSuper-Adieu';
+          color: var(--purple);
+          font-size: 29px;
+          padding-bottom: 12px;
+        }
+        .ingredients-title-container {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: nowrap;
+          align-items: center;
+        }
+        .ingredients-title {
+          font-family: 'GTWalsheim-Medium';
+          color: var(--purple);
+          font-size: 29px;
+          padding-left: 15px;
+        }
+        .ingredients-items li {
+          font-family: 'GTSuper-Regular';
+          color: var(--purple);
+          font-size: 19px;
+          line-height: 175%;
+        }
+        .organic-msg {
+          font-family: 'GTWalsheim-Bold';
+          color: var(--purple);
+          font-size: 19px;
+          line-height: auto;
+        }
+      </style>
+
       <!-- Flavors Content -->
+      <div class="content center">
+        <div class="flavors-copy left">
+          <p>glonuts are made without gluten, grains, dairy, soy, added sugar, <br/> gums, or unnatural flavors</p>
+        </div>
+        <!-- Snickerdoodle -->
+        <div class="product">
+          <div class="product-name left">
+            snickerdoodle
+          </div>
+          <div class="product-img">
+            <img src="assets/images/snick.png" alt="" width="328px">
+            <img src="assets/images/svg/feature-blocks.svg" alt="">
+          </div>
+        </div>
+        <!-- Snickerdoodle Ingredients -->
+        <hr>
+        <div class="ingredients-title-container left">
+          <img src="assets/images/svg/ingredient-icon-alt.svg" alt="" width="45px">
+          <div class="ingredients-title">
+            ingredients
+          </div>
+        </div>
+        <div class="ingredients-items left">
+          <ul>
+            <li>almond flour non-gmo</li>
+            <li>almond flour  non-gmo</li>
+            <li>coconut*</li>
+            <li>coconut oil*</li>
+            <li>coconut butter*</li>
+            <li>erythritol  non-gmo</li>
+            <li>monkfruit  non-gmo</li>
+            <li>almond mylk*</li>
+            <li>vanilla*</li>
+            <li>himalayan pink salt</li>
+          </ul>
+          <div class="organic-msg right">
+            * indicates organic
+          </div>
+        </div>
+        <hr>
+
+      </div>
 
       <!-- Hero CTA -->
-      <!-- Should be 75 px from hero copy -->
-      <div class="col-12 center">
+      <div class="content center cta">
         <h3>gimmie the glonuts</h3>
         <a href="about.html">
           <!-- Should be 35px from CTA copy -->
@@ -63,6 +144,16 @@
             lets glo
           </div>
         </a>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="ig-container">
+          <img src="assets/images/svg/instagram.svg" alt="">
+        </div>
+        <div class="copyright">
+          copyright © 2021, glonuts
+        </div>
       </div>
 
   <!-- End Container -->
