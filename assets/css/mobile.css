@@ -14,7 +14,7 @@
     width: 325px !important;
   }
   #snack-animation {
-    display: none;
+    display: none !important;
     width: 137px !important;
     margin-left: -150px !important;
     margin-top: -115px !important;
