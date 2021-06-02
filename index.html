@@ -51,16 +51,39 @@
         </div>
       </div>
 
+      <style media="screen">
+        #snack-animation {
+          margin-left: -570px;
+          margin-bottom: 30px;
+        }
+        #features-eclipse {
+          margin-left: 253px;
+          margin-bottom: 299px;
+        }
+        .hero-img-container {
+          padding-left: 70px;
+        }
+        .hero-copy {
+          width: 578px;
+          margin: 0 auto;
+        }
+        .hero-copy h4 {
+          text-align: left;
+        }
+      </style>
+
       <!-- Hero -->
-      <div class="center">
+      <div class="content center">
         <!-- Should be 112px from bottom of nav -->
-        <img src="assets/images/svg/snack-1.svg" alt="" width="231px">
-        <img src="assets/images/home.png" alt="" width="450px">
-        <img src="assets/images/svg/features-elipse.svg" alt="" width="154px">
+        <div class="hero-img-container">
+          <img src="assets/images/home.png" alt="" width="450px">
+          <img src="assets/images/svg/snack-1.svg" alt="" width="231px" id='snack-animation'>
+          <img src="assets/images/svg/features-elipse.svg" alt="" width="154px" id='features-eclipse'>
+        </div>
 
         <!-- Hero Copy -->
         <!-- Should be 50 px from hero image -->
-        <div class="left">
+        <div class="hero-copy">
           <h4>glonuts are raw vegan keto mini-donuts made with clean <br /> ingredients to help you glo from within</h4>
         </div>
 
@@ -90,5 +113,22 @@
 
       <!-- End Container -->
     </div>
+
+    <script type="text/javascript">
+    // Snack Image file location array
+      images = ["assets/images/svg/snack-1.svg",
+                "assets/images/svg/snack-2.svg",
+                "assets/images/svg/snack-3.svg",
+                "assets/images/svg/snack-4.svg",
+                "assets/images/svg/snack-5.svg"]
+      var $img = $("#snack-animation"), i = 0, speed = 0;
+      window.setInterval(function() {
+        $img.fadeOut(speed, function() {
+          $img.attr("src", images[(++i % images.length)]);
+          $img.fadeIn(speed);
+        });
+      }, 500);
+    </script>
+
   </body>
 </html>
