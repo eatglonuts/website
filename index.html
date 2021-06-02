@@ -125,12 +125,19 @@
                 "assets/images/svg/snack-4.svg",
                 "assets/images/svg/snack-5.svg"]
       var $img = $("#snack-animation"), i = 0, speed = 0;
-      window.setInterval(function() {
-        $img.fadeOut(speed, function() {
-          $img.attr("src", images[(++i % images.length)]);
-          $img.fadeIn(speed);
-        });
-      }, 500);
+      var targetWidth = 960;
+      if ( $(window).width() >= targetWidth) {
+        //Add your javascript for screens wider than or equal to 960 here
+        window.setInterval(function() {
+          $img.fadeOut(speed, function() {
+            $img.attr("src", images[(++i % images.length)]);
+            $img.fadeIn(speed);
+          });
+        }, 500);
+      }
+      else {
+        //Add your javascript for screens smaller than 960 here
+      }
     </script>
 
   </body>
