@@ -19,6 +19,7 @@
     <link href="assets/css/mobile.css" rel="stylesheet" type="text/css">
     <!-- JS -->
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.expandable.panel.js"></script>
   </head>
   <body>
     <div class="container">
@@ -70,6 +71,7 @@
           flex-direction: row;
           flex-wrap: nowrap;
           align-items: center;
+          justify-content: space-between;
         }
         .ingredients-title {
           font-family: 'GTWalsheim-Medium';
@@ -88,6 +90,29 @@
           color: var(--purple);
           font-size: 19px;
           line-height: auto;
+        }
+        /* Expandable List */
+        .expandable-panel {
+          overflow:auto;
+        }
+        .expandable-panel-heading {
+          width:100%;
+          cursor:pointer;
+          min-height:50px;
+          clear:both;
+          background-color: white;
+          position:relative;
+        }
+        .expandable-panel-content {
+          margin-top:-999px;
+        }
+        .icon-close-open {
+          width:24px;
+          height:24px;
+          background-image:url('assets/images/svg/expand.svg');
+        }
+        ul {
+          margin: 0;
         }
         /* Hide mobile feature blocks on desktop */
         @media only screen and (min-width: 60em) {
@@ -123,27 +148,33 @@
         </div>
         <!-- Snickerdoodle Ingredients -->
         <hr>
-        <div class="ingredients-title-container left">
-          <img src="assets/images/svg/ingredient-icon-alt.svg" alt="" width="45px">
-          <div class="ingredients-title">
-            ingredients
+        <div class="expandable-panel" id="cp-1">
+          <div class="expandable-panel-heading">
+            <div class="ingredients-title-container left">
+              <img src="assets/images/svg/ingredient-icon-alt.svg" alt="" width="45px">
+              <div class="ingredients-title">
+                ingredients
+              </div>
+              <span class="icon-close-open"></span>
+            </div>
           </div>
-        </div>
-        <div class="ingredients-items left">
-          <ul>
-            <li>almond flour non-gmo</li>
-            <li>almond flour  non-gmo</li>
-            <li>coconut*</li>
-            <li>coconut oil*</li>
-            <li>coconut butter*</li>
-            <li>erythritol  non-gmo</li>
-            <li>monkfruit  non-gmo</li>
-            <li>almond mylk*</li>
-            <li>vanilla*</li>
-            <li>himalayan pink salt</li>
-          </ul>
-          <div class="organic-msg right">
-            * indicates organic
+          <div class="expandable-panel-content">
+            <div class="ingredients-items left">
+              <ul>
+                <li>almond flour non-gmo</li>
+                <li>almond flour  non-gmo</li>
+                <li>coconut*</li>
+                <li>coconut oil*</li>
+                <li>coconut butter*</li>
+                <li>erythritol  non-gmo</li>
+                <li>monkfruit  non-gmo</li>
+                <li>almond mylk*</li>
+                <li>vanilla*</li>
+                <li>himalayan pink salt</li>
+              </ul>
+              <div class="organic-msg right">
+                * indicates organic
+              </div>
           </div>
         </div>
         <hr>
@@ -164,29 +195,35 @@
             </div>
           </div>
         </div>
-        <!-- Powdered Ingredients -->
+        <!-- Snickerdoodle Ingredients -->
         <hr>
-        <div class="ingredients-title-container left">
-          <img src="assets/images/svg/ingredient-icon-alt.svg" alt="" width="45px">
-          <div class="ingredients-title">
-            ingredients
+        <div class="expandable-panel" id="cp-2">
+          <div class="expandable-panel-heading">
+            <div class="ingredients-title-container left">
+              <img src="assets/images/svg/ingredient-icon-alt.svg" alt="" width="45px">
+              <div class="ingredients-title">
+                ingredients
+              </div>
+              <span class="icon-close-open"></span>
+            </div>
           </div>
-        </div>
-        <div class="ingredients-items left">
-          <ul>
-            <li>almond flour non-gmo</li>
-            <li>almond flour  non-gmo</li>
-            <li>coconut*</li>
-            <li>coconut oil*</li>
-            <li>coconut butter*</li>
-            <li>erythritol  non-gmo</li>
-            <li>monkfruit  non-gmo</li>
-            <li>almond mylk*</li>
-            <li>vanilla*</li>
-            <li>himalayan pink salt</li>
-          </ul>
-          <div class="organic-msg right">
-            * indicates organic
+          <div class="expandable-panel-content">
+            <div class="ingredients-items left">
+              <ul>
+                <li>almond flour non-gmo</li>
+                <li>almond flour  non-gmo</li>
+                <li>coconut*</li>
+                <li>coconut oil*</li>
+                <li>coconut butter*</li>
+                <li>erythritol  non-gmo</li>
+                <li>monkfruit  non-gmo</li>
+                <li>almond mylk*</li>
+                <li>vanilla*</li>
+                <li>himalayan pink salt</li>
+              </ul>
+              <div class="organic-msg right">
+                * indicates organic
+              </div>
           </div>
         </div>
         <hr>
@@ -207,31 +244,37 @@
             </div>
           </div>
         </div>
-        <!-- chocolate Ingredients -->
+        <!-- Snickerdoodle Ingredients -->
         <hr>
-        <div class="ingredients-title-container left">
-          <img src="assets/images/svg/ingredient-icon-alt.svg" alt="" width="45px">
-          <div class="ingredients-title">
-            ingredients
+        <div class="expandable-panel" id="cp-3">
+          <div class="expandable-panel-heading">
+            <div class="ingredients-title-container left">
+              <img src="assets/images/svg/ingredient-icon-alt.svg" alt="" width="45px">
+              <div class="ingredients-title">
+                ingredients
+              </div>
+              <span class="icon-close-open"></span>
+            </div>
           </div>
-        </div>
-        <div class="ingredients-items left">
-          <ul>
-            <li>almond flour non-gmo </li>
-            <li>coconut* </li>
-            <li>coconut oil* </li>
-            <li>coconut butter* </li>
-            <li>erythritol non-gmo </li>
-            <li>monkfruit non-gmo </li>
-            <li>cacao* </li>
-            <li>mesquite* </li>
-            <li>almond mylk* </li>
-            <li>vanilla* </li>
-            <li>cinnamon* </li>
-            <li>himalayan pink salt</li>
-          </ul>
-          <div class="organic-msg right">
-            * indicates organic
+          <div class="expandable-panel-content">
+            <div class="ingredients-items left">
+              <ul>
+                <li>almond flour non-gmo </li>
+                <li>coconut* </li>
+                <li>coconut oil* </li>
+                <li>coconut butter* </li>
+                <li>erythritol non-gmo </li>
+                <li>monkfruit non-gmo </li>
+                <li>cacao* </li>
+                <li>mesquite* </li>
+                <li>almond mylk* </li>
+                <li>vanilla* </li>
+                <li>cinnamon* </li>
+                <li>himalayan pink salt</li>
+              </ul>
+              <div class="organic-msg right">
+                * indicates organic
+              </div>
           </div>
         </div>
         <hr>
@@ -240,10 +283,10 @@
         <!-- Peanut Butter -->
         <div class="product">
           <div class="product-name left">
-            peanut butter
+            chocolate mylk
           </div>
           <div class="product-img">
-            <img src="assets/images/pb.png" alt="" width="328px">
+            <img src="assets/images/choc.png" alt="" width="328px">
             <div class="desktop-feature-blocks">
               <img src="assets/images/svg/feature-blocks.svg" alt="">
             </div>
@@ -252,30 +295,37 @@
             </div>
           </div>
         </div>
-        <!-- Peanut Butter Ingredients -->
+        <!-- Snickerdoodle Ingredients -->
         <hr>
-        <div class="ingredients-title-container left">
-          <img src="assets/images/svg/ingredient-icon-alt.svg" alt="" width="45px">
-          <div class="ingredients-title">
-            ingredients
+        <div class="expandable-panel" id="cp-4">
+          <div class="expandable-panel-heading">
+            <div class="ingredients-title-container left">
+              <img src="assets/images/svg/ingredient-icon-alt.svg" alt="" width="45px">
+              <div class="ingredients-title">
+                ingredients
+              </div>
+              <span class="icon-close-open"></span>
+            </div>
           </div>
-        </div>
-        <div class="ingredients-items left">
-          <ul>
-            <li>almond flour non-gmo </li>
-            <li>coconut* </li>
-            <li>coconut oil* </li>
-            <li>coconut butter* </li>
-            <li>erythritol non-gmo </li>
-            <li>monkfruit non-gmo </li>
-            <li>peanuts* </li>
-            <li>almond mylk* </li>
-            <li>vanilla* </li>
-            <li>cinnamon* </li>
-            <li>himalayan pink salt</li>
-          </ul>
-          <div class="organic-msg right">
-            * indicates organic
+          <div class="expandable-panel-content">
+            <div class="ingredients-items left">
+              <ul>
+                <li>almond flour non-gmo </li>
+                <li>coconut* </li>
+                <li>coconut oil* </li>
+                <li>coconut butter* </li>
+                <li>erythritol non-gmo </li>
+                <li>monkfruit non-gmo </li>
+                <li>cacao* </li>
+                <li>mesquite* </li>
+                <li>almond mylk* </li>
+                <li>vanilla* </li>
+                <li>cinnamon* </li>
+                <li>himalayan pink salt</li>
+              </ul>
+              <div class="organic-msg right">
+                * indicates organic
+              </div>
           </div>
         </div>
         <hr>
