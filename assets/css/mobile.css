@@ -51,6 +51,9 @@
   .mobile-feature-blocks {
     display: block;
   }
+  .product-img img {
+    width: 346px;
+  }
 }
 
 /* iPAD */
