@@ -1,0 +1,66 @@
+.nav-pane {
+  z-index: 99;
+  transition: 250ms;
+  position: fixed;
+  transform: translateX(-350px);
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 348px;
+  background: var(--purple);
+  border-right: none;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (max-width: 620px) {
+  .nav-pane {
+    width: 80vw;
+    transform: translateX(-300px);
+  }
+}
+
+.nav-pane h1 {
+  margin: 0;
+  text-align: center;
+  color: #F1F1F1;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+.nav-pane.open {
+  transform: translateX(0);
+  transition: 250ms;
+}
+
+.toggle-nav {
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+}
+
+.toggle-nav .menu-icon {
+  width: 24px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-image:url('../images/svg/mobile-only/hamburger.svg');
+}
+
+.toggle-nav.open .menu-icon {
+  width: 16px;
+  height: 16px;
+  background-repeat: no-repeat;
+  background-image:url('../images/svg/mobile-only/menu-close.svg');
+}
+
+.toggle-nav:hover span.m, .toggle-nav:hover span.n, .toggle-nav:hover span.u {
+  opacity: 1;
+  transition: 250ms;
+}
+
+.mobile-nav-link-container .nav-link a {
+  color: var(--white);
+  font-family: 'GTWalsheim-Bold', sans-serif;
+  font-size: 25px;
+  padding-left: 25px;
+  letter-spacing: 0.03em;
+}

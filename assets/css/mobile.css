@@ -1,4 +1,18 @@
+/* iPHONE */
 @media only screen and (max-width: 60em) { /* 960px */
+  /* Hide elements designated for desktop view only */
+  .desktop {
+    display: none;
+  }
+
+  /* Navigation */
+  .logo a {
+    font-size: 39px !important;
+  }
+  .nav-link {
+    padding-top: 16px !important;
+  }
+
   /* HOME PAGE */
   .hero-img-container {
     padding-left: 0px !important;
@@ -37,5 +51,27 @@
   .mobile-feature-blocks {
     display: block;
   }
+}
 
+/* iPAD */
+@media screen and (max-width: 768px) {
+
+  /* Hide elements designated for desktop view only */
+  .desktop {
+    display: none;
+  }
+
+  .nav-pane {
+    width: 80vw;
+    transform: translateX(-80vw);
+  }
+}
+
+
+/* DESKTOP */
+@media only screen and (min-width: 60em) { /* 960px */
+  /* Hide Mobile Nav */
+  .toggle-nav {
+    display: none;
+  }
 }
