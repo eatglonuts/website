@@ -58,6 +58,21 @@
 
 }
 
+/* Footer */
+.ig-link {
+  height: 44px;
+  width: 44px;
+  display: block;
+  overflow: hidden;
+  background-image: url('../images/svg/insta-icons.svg');
+}
+a:hover.ig-link {
+  background-position: 0 89px;
+}
+a:visited.ig-link {
+  background-position: 0 44px;
+}
+
 /* Buttons */
 .btn {
   display: inline-block;
