@@ -1,8 +1,9 @@
-(function($) {
-    $(document).ready(function () {
+// (function($) {
+//     $(document).ready(function () {
+function runPanels(panels) {
         /*-------------------- EXPANDABLE PANELS ----------------------*/
         var panelspeed = 500; //panel animate speed in milliseconds
-        var totalpanels = 4; //total number of collapsible panels
+        var totalpanels = panels; //total number of collapsible panels
         var defaultopenpanel = 0; //leave 0 for no panel open
         var accordian = false; //set panels to behave like an accordian, with one panel only ever open at once
 
@@ -62,13 +63,19 @@
             }
         }
 
+        // Initialize
+        panelinit();
+
        //Uncomment these lines if the expandable panels are not a fixed width and need to resize
        /* $( window ).resize(function() {
           panelinit();
         });*/
 
-        $(window).load(function() {
-            panelinit();
-        }); //END LOAD
-    }); //END READY
-})(jQuery);
+        // $(window).load(function() {
+        //     panelinit();
+        // }); //END LOAD
+
+      } // End RunPanels Function
+
+//     }); //END READY
+// })(jQuery);
