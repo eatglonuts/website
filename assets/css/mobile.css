@@ -1,5 +1,5 @@
 /* iPHONE */
-@media only screen and (max-width: 60em) { /* 960px */
+@media only screen and (max-width: 730px) {
   /* Hide elements designated for desktop view only */
   .desktop {
     display: none;
@@ -122,16 +122,21 @@
 }
 
 /* iPAD */
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 730px) and (max-width: 950px) {
 
   /* Hide elements designated for desktop view only */
-  .desktop {
-    display: none;
+  .desktop-feature-blocks {
+    display: inline-block;
   }
-
+  .mobile-feature-blocks {
+    display: none !important;
+  }
   .nav-pane {
-    width: 80vw;
-    transform: translateX(-80vw);
+    /* width: 80vw; */
+    /* transform: translateX(-80vw); */
+  }
+  .nav-link.desktop {
+    display: none;
   }
 }
 
