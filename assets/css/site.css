@@ -60,19 +60,11 @@ h2 {
 }
 
 h3 {
-  font-family: 'GTWalsheim-Medium', sans-serif;
-  color: var(--purple);
-  /* font-size: 1.375rem; */
-  font-size: 29px;
-  font-weight: 100;
-  letter-spacing: 0.1em;
+  font-size: 1.375rem;
 }
 
 h4 {
-  font-family: 'GTWalsheim-Medium', sans-serif;
-  color: var(--purple);
-  /* font-size: 1.125rem; */
-  font-size: 19px;
+  font-size: 1.125rem;
 }
 
 h5 {
@@ -108,6 +100,7 @@ p {
   color: var(--purple);
   line-height: 1.8;
 }
+
 /* Section Styles */
 .section {
   width: 100%;
