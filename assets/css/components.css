@@ -72,9 +72,12 @@
 }
 
 /* Flavors */
-.ingredients-title {
+.ingredients-title, .stockist-title {
   position: absolute;
   margin-left: 50px;
+}
+.stockist-items {
+  padding-left: 24px;
 }
 .ingredients-items {
   padding-left: 52px;

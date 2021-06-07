@@ -108,6 +108,14 @@
     width: 366px !important;
     margin-left: -24px !important;
   }
+
+  /* STOCKIST */
+  .stockist-copy {
+    width: 325px !important;
+    padding-top: 84px !important;
+    padding-bottom: 35px !important;
+  }
+
 }
 
 /* iPAD */
