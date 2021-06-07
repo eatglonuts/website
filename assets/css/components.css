@@ -1,3 +1,8 @@
+/* Hide on Mobile */
+.mobile {
+  display: none;
+}
+
 /* Navigation */
 .nav-container {
   display: flex;
@@ -52,7 +57,32 @@
   padding-top: 75px;
   padding-bottom: 30px;
 }
+.flavors-copy {
+  font-family: 'GTWalsheim-Medium', sans-serif;
+  color: var(--purple);
+  font-size: 19px;
+  line-height: 30px;
+  width: 578px;
+}
+.product-img img {
+  margin-left: -40px;
+}
+.desktop-feature-blocks img {
+  margin-left: -15px;
+}
 
+/* Flavors */
+.ingredients-title {
+  position: absolute;
+  margin-left: 50px;
+}
+.ingredients-items {
+  padding-left: 52px;
+  padding-top: 25px;
+}
+.organic-msg {
+  padding-top: 8px;
+}
 
 /* Footer */
 .footer {

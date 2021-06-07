@@ -4,11 +4,15 @@
   .desktop {
     display: none;
   }
+  .mobile {
+    display: block;
+  }
 
   /* Navigation */
   .nav-container {
     position: absolute;
     background: white;
+    z-index: 99 !important;
   }
   .logo a {
     font-size: 39px !important;
@@ -80,6 +84,20 @@
   }
 
   /* FLAVORS PAGE */
+  .flavors-copy {
+    width: 325px;
+    padding-top: 84px !important;
+    padding-bottom: 0px !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
+    font-family: 'GTWalsheim-Medium', sans-serif;
+    color: var(--purple);
+  }
+  .product-name {
+    font-size: 23px !important;
+    padding-top: 35px !important;
+    margin-bottom: -35px !important;
+  }
   .desktop-feature-blocks {
     display: none;
   }
@@ -87,7 +105,8 @@
     display: block;
   }
   .product-img img {
-    width: 346px;
+    width: 366px !important;
+    margin-left: -24px !important;
   }
 }
 
