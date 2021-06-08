@@ -6,16 +6,16 @@
   top: 0;
   left: 0;
   height: 100vh;
-  width: 348px;
+  width: 301px;
   background: var(--purple);
   border-right: none;
   display: flex;
   flex-direction: column;
 }
-@media screen and (max-width: 620px) {
+@media screen and (min-width: 620px) and (max-width: 950px) {
   .nav-pane {
-    /* width: 80vw;
-    transform: translateX(-300px); */
+    width: 652px;
+    transform: translateX(-652px);
   }
 }
 
