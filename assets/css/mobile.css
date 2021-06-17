@@ -1,5 +1,5 @@
 /* iPHONE */
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 725px) {
   /* Hide elements designated for desktop view only */
   .desktop {
     display: none;
@@ -69,9 +69,11 @@
   }
   #snack-animation {
     background-image: url('../images/svg/mobile-only/snack-long-mobile.svg') !important;
+    position: relative !important;
     height: 132px !important;
     width: 137px !important;
-    margin-left: -110px !important;
+    margin-left: 0px !important;
+    left: -75px;
     margin-top: -115px !important;
     margin-bottom: 0px !important;
   }
@@ -144,7 +146,7 @@
 }
 
 /* iPAD */
-@media screen and (min-width: 750px) and (max-width: 950px) {
+@media screen and (min-width: 725px) and (max-width: 950px) {
 
   /* Hide elements designated for desktop view only */
   .desktop-feature-blocks {
