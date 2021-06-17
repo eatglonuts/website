@@ -8,9 +8,6 @@
     display: block;
   }
 
-  html, body {
-    overflow: hidden;
-  }
   .content {
     overflow: auto;
     height: auto;
