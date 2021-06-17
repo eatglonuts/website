@@ -41,7 +41,7 @@
     line-height: 24px;
     font-size: 16px !important;
     text-align: left;
-    padding-top: 45px;
+    padding-top: 25px;
   }
   .cta {
     padding-top: 35px !important;
@@ -71,7 +71,7 @@
     background-image: url('../images/svg/mobile-only/snack-long-mobile.svg') !important;
     height: 132px !important;
     width: 137px !important;
-    margin-left: -150px !important;
+    margin-left: -110px !important;
     margin-top: -115px !important;
     margin-bottom: 0px !important;
   }
