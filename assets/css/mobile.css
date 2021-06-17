@@ -1,5 +1,5 @@
 /* iPHONE */
-@media only screen and (max-width: 725px) {
+@media only screen and (max-width: 750px) {
   /* Hide elements designated for desktop view only */
   .desktop {
     display: none;
@@ -114,9 +114,42 @@
   .mobile-feature-blocks {
     display: block;
   }
-  .product-img img {
-    width: 366px !important;
-    margin-left: -16px !important;
+  .product-img {
+    display: block !important;
+    margin-top: 30px;
+    height: 340px !important;
+    width: 328px !important;
+  }
+  .product-shot {
+    width: 328px;
+    text-align: center;
+  }
+  .calories {
+    position: relative;
+    bottom: 300px !important;
+    left: 4px !important;
+    margin-left: unset !important;
+    margin-bottom: unset !important;
+    transform: rotate(15.01deg) !important;
+  }
+  .net-carbs {
+    position: relative;
+    bottom: 340px !important;
+    left: 114px !important;
+    margin-left: unset !important;
+    margin-bottom: unset !important;
+    transform: rotate(-15.01deg) !important;
+  }
+  .sugar {
+    position: relative;
+    bottom: 90px !important;
+    left: 16px !important;
+    margin-left: unset !important;
+    margin-top: unset !important;
+    transform: rotate(-8.01deg) !important;
+  }
+  .ingredient-blocks {
+    margin-left: -50px;
   }
   .ingredients-title {
     font-size: 23px !important;
@@ -146,7 +179,7 @@
 }
 
 /* iPAD */
-@media screen and (min-width: 725px) and (max-width: 950px) {
+@media screen and (min-width: 750px) and (max-width: 950px) {
 
   /* Hide elements designated for desktop view only */
   .desktop-feature-blocks {

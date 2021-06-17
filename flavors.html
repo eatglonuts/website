@@ -135,6 +135,32 @@
           font-size: 19px;
           line-height: auto;
         }
+        .product-img {
+          display: inline-block;
+          text-align: left;
+          width: 430px;
+        }
+        .product-shot {
+          width: 328px;
+        }
+        .calories {
+          margin-left: -369px;
+          margin-bottom: 189px;
+          transform: rotate(15.01deg);
+        }
+        .net-carbs {
+          margin-left: 225px;
+          margin-bottom: 230px;
+          transform: rotate(-15.01deg);
+        }
+        .sugar {
+          margin-left: 260px;
+          margin-top: -80px;
+          transform: rotate(-8.01deg);
+        }
+        .ingredient-blocks {
+          margin-left: -50px;
+        }
         /* Hide mobile feature blocks on desktop */
         @media only screen and (min-width: 60em) {
           .mobile-feature-blocks {
@@ -143,9 +169,6 @@
           .desktop-feature-blocks {
             display: inline;
           }
-        }
-        .ingredient-blocks {
-          margin-left: -25px;
         }
       </style>
 
@@ -162,12 +185,16 @@
           </div>
           <div class="product-img">
             <!-- Desktop Product Image -->
-            <img src="assets/images/snicker-badges.png" alt="" class="desktop">
+            <img src="assets/images/snick.png" alt="" class="product-shot desktop">
             <!-- Mobile Product Image -->
-            <img src="assets/images/mobile/snicker-badges.png" alt="" class="mobile">
-            <div class="desktop-feature-blocks">
-              <img src="assets/images/svg/feature-blocks.svg" alt="" class="ingredient-blocks">
-            </div>
+            <img src="assets/images/snick.png" alt="" class="product-shot mobile">
+            <!-- Badges -->
+            <img src="assets/images/svg/calories-snicker-powder.svg" alt="" class="calories">
+            <img src="assets/images/svg/net-carbs-all.svg" alt="" class="net-carbs">
+            <img src="assets/images/svg/sugar-all.svg" alt="" class="sugar">
+          </div>
+          <div class="desktop-feature-blocks">
+            <img src="assets/images/svg/feature-blocks.svg" alt="" class="ingredient-blocks">
           </div>
         </div>
         <!-- Snickerdoodle Ingredients -->
@@ -201,9 +228,7 @@
             </div>
           </div>
         </div>
-
         <hr>
-
         <div class="mobile-feature-blocks">
           <img src="assets/images/svg/mobile-only/feature-blocks-mobile.svg" alt="">
         </div>
@@ -217,15 +242,19 @@
           </div>
           <div class="product-img">
             <!-- Desktop Product Image -->
-            <img src="assets/images/powder-badges.png" alt="" class="desktop">
+            <img src="assets/images/powd.png" alt="" class="product-shot desktop">
             <!-- Mobile Product Image -->
-            <img src="assets/images/mobile/powder-badges.png" alt="" class="mobile">
-            <div class="desktop-feature-blocks">
-              <img src="assets/images/svg/feature-blocks.svg" alt="" class="ingredient-blocks">
-            </div>
+            <img src="assets/images/powd.png" alt="" class="product-shot mobile">
+            <!-- Badges -->
+            <img src="assets/images/svg/calories-snicker-powder.svg" alt="" class="calories">
+            <img src="assets/images/svg/net-carbs-all.svg" alt="" class="net-carbs">
+            <img src="assets/images/svg/sugar-all.svg" alt="" class="sugar">
+          </div>
+          <div class="desktop-feature-blocks">
+            <img src="assets/images/svg/feature-blocks.svg" alt="" class="ingredient-blocks">
           </div>
         </div>
-        <!-- Snickerdoodle Ingredients -->
+        <!-- Powdered Ingredients -->
         <hr>
         <div class="expandable-panel" id="cp-2">
           <div class="expandable-panel-heading">
@@ -272,15 +301,18 @@
           </div>
           <div class="product-img">
             <!-- Desktop Product Image -->
-            <img src="assets/images/choc-badges.png" alt="" class="desktop">
+            <img src="assets/images/choc.png" alt="" class="product-shot desktop">
             <!-- Mobile Product Image -->
-            <img src="assets/images/mobile/choc-badges.png" alt="" class="mobile">
-            <div class="desktop-feature-blocks">
-              <img src="assets/images/svg/feature-blocks.svg" alt="" class="ingredient-blocks">
-            </div>
+            <img src="assets/images/choc.png" alt="" class="product-shot mobile">
+            <!-- Badges -->
+            <img src="assets/images/svg/calories-choc.svg" alt="" class="calories">
+            <img src="assets/images/svg/net-carbs-all.svg" alt="" class="net-carbs">
+            <img src="assets/images/svg/sugar-all.svg" alt="" class="sugar">
           </div>
-        </div>
-        <!-- Snickerdoodle Ingredients -->
+          <div class="desktop-feature-blocks">
+            <img src="assets/images/svg/feature-blocks.svg" alt="" class="ingredient-blocks">
+          </div>
+        <!-- Choc Ingredients -->
         <hr>
         <div class="expandable-panel" id="cp-3">
           <div class="expandable-panel-heading">
@@ -330,12 +362,16 @@
           </div>
           <div class="product-img">
             <!-- Desktop Product Image -->
-            <img src="assets/images/pb-badges.png" alt="" class="desktop">
+            <img src="assets/images/pb.png" alt="" class="product-shot desktop">
             <!-- Mobile Product Image -->
-            <img src="assets/images/mobile/pb-badges.png" alt="" class="mobile">
-            <div class="desktop-feature-blocks">
-              <img src="assets/images/svg/feature-blocks.svg" alt="" class="ingredient-blocks">
-            </div>
+            <img src="assets/images/pb.png" alt="" class="product-shot mobile">
+            <!-- Badges -->
+            <img src="assets/images/svg/calories-pb.svg" alt="" class="calories">
+            <img src="assets/images/svg/net-carbs-all.svg" alt="" class="net-carbs">
+            <img src="assets/images/svg/sugar-all.svg" alt="" class="sugar">
+          </div>
+          <div class="desktop-feature-blocks">
+            <img src="assets/images/svg/feature-blocks.svg" alt="" class="ingredient-blocks">
           </div>
         </div>
         <!-- Snickerdoodle Ingredients -->
