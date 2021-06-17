@@ -83,6 +83,8 @@
   .about-copy {
     width: 325px !important;
     padding-top: 84px !important;
+    font-size: 16px !important;
+    line-height: 24px !important;
   }
   .about p {
     font-size: 16px !important;
