@@ -8,9 +8,17 @@
     display: block;
   }
 
+  html, body {
+    overflow: hidden;
+  }
+  .content {
+    overflow: auto;
+    height: auto;
+  }
+
   /* Navigation */
   .nav-container {
-    position: absolute;
+    position: fixed;
     background: white;
     z-index: 99 !important;
   }
@@ -63,7 +71,8 @@
     width: 325px !important;
   }
   #snack-animation {
-    display: none !important;
+    background-image: url('../images/svg/mobile-only/snack-long-mobile.svg') !important;
+    height: 132px !important;
     width: 137px !important;
     margin-left: -150px !important;
     margin-top: -115px !important;

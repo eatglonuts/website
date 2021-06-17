@@ -78,9 +78,126 @@
 
       <style media="screen">
         #snack-animation {
+          display: inline-block;
           margin-left: -570px;
           margin-bottom: 30px;
+          background-image: url('assets/images/svg/snack-long-desktop.svg');
+          background-repeat: no-repeat;
+          width: 232px;
+          height: 223px;
+          /* background-size: contain; */
+          /* background-position: 0px 0px; */
+          animation: foobar 3s infinite;
         }
+
+        /* Desktop */
+        @media only screen and (min-width: 750px) {
+          @keyframes foobar {
+            0%   {
+              background-position: 0px 0px;
+              -webkit-animation-timing-function: steps(1, end);
+              -moz-animation-timing-function: steps(1, end);
+              -ms-animation-timing-function: steps(1, end);
+              -o-animation-timing-function: steps(1, end);
+              animation-timing-function: steps(1, end);
+            }
+            20%  {
+              background-position: 0px -233px;
+              -webkit-animation-timing-function: steps(1, end);
+              -moz-animation-timing-function: steps(1, end);
+              -ms-animation-timing-function: steps(1, end);
+              -o-animation-timing-function: steps(1, end);
+              animation-timing-function: steps(1, end);
+            }
+            40%  {
+              background-position: 0px -466px;
+              -webkit-animation-timing-function: steps(1, end);
+              -moz-animation-timing-function: steps(1, end);
+              -ms-animation-timing-function: steps(1, end);
+              -o-animation-timing-function: steps(1, end);
+              animation-timing-function: steps(1, end);
+            }
+            60%  {
+              background-position: 0px -699px;
+              -webkit-animation-timing-function: steps(1, end);
+              -moz-animation-timing-function: steps(1, end);
+              -ms-animation-timing-function: steps(1, end);
+              -o-animation-timing-function: steps(1, end);
+              animation-timing-function: steps(1, end);
+            }
+            80% {
+              background-position: 0px -932px;
+              -webkit-animation-timing-function: steps(1, end);
+              -moz-animation-timing-function: steps(1, end);
+              -ms-animation-timing-function: steps(1, end);
+              -o-animation-timing-function: steps(1, end);
+              animation-timing-function: steps(1, end);
+            }
+            100% {
+              background-position: 0px -1864px;
+              -webkit-animation-timing-function: steps(1, end);
+              -moz-animation-timing-function: steps(1, end);
+              -ms-animation-timing-function: steps(1, end);
+              -o-animation-timing-function: steps(1, end);
+              animation-timing-function: steps(1, end);
+            }
+          }
+        }
+
+        /* Mobile */
+        @media only screen and (max-width: 750px) {
+          @keyframes foobar {
+            0%   {
+              background-position: 0px 0px;
+              -webkit-animation-timing-function: steps(1, end);
+              -moz-animation-timing-function: steps(1, end);
+              -ms-animation-timing-function: steps(1, end);
+              -o-animation-timing-function: steps(1, end);
+              animation-timing-function: steps(1, end);
+            }
+            20%  {
+              background-position: 0px -142px;
+              -webkit-animation-timing-function: steps(1, end);
+              -moz-animation-timing-function: steps(1, end);
+              -ms-animation-timing-function: steps(1, end);
+              -o-animation-timing-function: steps(1, end);
+              animation-timing-function: steps(1, end);
+            }
+            40%  {
+              background-position: 0px -284px;
+              -webkit-animation-timing-function: steps(1, end);
+              -moz-animation-timing-function: steps(1, end);
+              -ms-animation-timing-function: steps(1, end);
+              -o-animation-timing-function: steps(1, end);
+              animation-timing-function: steps(1, end);
+            }
+            60%  {
+              background-position: 0px -426px;
+              -webkit-animation-timing-function: steps(1, end);
+              -moz-animation-timing-function: steps(1, end);
+              -ms-animation-timing-function: steps(1, end);
+              -o-animation-timing-function: steps(1, end);
+              animation-timing-function: steps(1, end);
+            }
+            80% {
+              background-position: 0px -568px;
+              -webkit-animation-timing-function: steps(1, end);
+              -moz-animation-timing-function: steps(1, end);
+              -ms-animation-timing-function: steps(1, end);
+              -o-animation-timing-function: steps(1, end);
+              animation-timing-function: steps(1, end);
+            }
+            100% {
+              background-position: 0px -932px;
+              -webkit-animation-timing-function: steps(1, end);
+              -moz-animation-timing-function: steps(1, end);
+              -ms-animation-timing-function: steps(1, end);
+              -o-animation-timing-function: steps(1, end);
+              animation-timing-function: steps(1, end);
+            }
+          }
+        }
+
         #features-eclipse {
           margin-left: 253px;
           margin-bottom: 299px;
@@ -95,6 +212,9 @@
         .hero-copy h4 {
           text-align: left;
         }
+
+
+
       </style>
 
       <!-- Hero -->
@@ -102,7 +222,7 @@
         <!-- Should be 112px from bottom of nav -->
         <div class="hero-img-container">
           <img src="assets/images/home.png" alt="" id="hero-image" width="450px">
-          <img src="assets/images/svg/snack-1.svg" alt="" width="231px" id='snack-animation'>
+          <div id='snack-animation'></div>
           <img src="assets/images/svg/features-elipse.svg" alt="" width="154px" id='features-eclipse'>
         </div>
 
@@ -142,25 +262,25 @@
 
     <script type="text/javascript">
     // Snack Image file location array
-      images = ["assets/images/svg/snack-1.svg",
-                "assets/images/svg/snack-2.svg",
-                "assets/images/svg/snack-3.svg",
-                "assets/images/svg/snack-4.svg",
-                "assets/images/svg/snack-5.svg"]
-      var $img = $("#snack-animation"), i = 0, speed = 0;
-      var targetWidth = 960;
-      if ( $(window).width() >= targetWidth) {
-        //Add your javascript for screens wider than or equal to 960 here
-        window.setInterval(function() {
-          $img.fadeOut(speed, function() {
-            $img.attr("src", images[(++i % images.length)]);
-            $img.fadeIn(speed);
-          });
-        }, 500);
-      }
-      else {
-        //Add your javascript for screens smaller than 960 here
-      }
+      // images = ["assets/images/svg/snack-1.svg",
+      //           "assets/images/svg/snack-2.svg",
+      //           "assets/images/svg/snack-3.svg",
+      //           "assets/images/svg/snack-4.svg",
+      //           "assets/images/svg/snack-5.svg"]
+      // var $img = $("#snack-animation"), i = 0, speed = 0;
+      // var targetWidth = 960;
+      // if ( $(window).width() >= targetWidth) {
+      //   //Add your javascript for screens wider than or equal to 960 here
+      //   window.setInterval(function() {
+      //     $img.fadeOut(speed, function() {
+      //       $img.attr("src", images[(++i % images.length)]);
+      //       $img.fadeIn(speed);
+      //     });
+      //   }, 500);
+      // }
+      // else {
+      //   //Add your javascript for screens smaller than 960 here
+      // }
     </script>
 
   </body>
